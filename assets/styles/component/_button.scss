@@ -1,0 +1,17 @@
+@use '../variables';
+
+.c-button {
+  background: $pink;
+  height: 32px;
+  border-radius: 16px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    opacity: 0.7;
+  }
+
+  a {
+    color: white;
+  }
+}

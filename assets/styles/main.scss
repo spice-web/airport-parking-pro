@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'foundation/ress';
+@import 'base';
+@import '_layout';
+@import 'component/_button';
+@import 'component/_title';
