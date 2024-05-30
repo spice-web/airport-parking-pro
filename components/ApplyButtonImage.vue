@@ -5,7 +5,7 @@
 <style lang="scss" scoped>
   .button {
     width: 80%;
-    max-width: 300px;
+    max-width: 450px;
     margin-left: auto;
     margin-right: auto;
   }

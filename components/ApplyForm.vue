@@ -1,6 +1,6 @@
 <template>
-  <h3>無料相談・資料請求は<br>こちらから</h3>
   <form action="">
+    <h3>無料相談・資料請求は<br>こちらから</h3>
     <!-- 会社名 -->
     <div class="form-group">
       <label for="company">会社名</label>
@@ -34,13 +34,13 @@
     <!-- お問い合わせ内容 -->
     <div class="form-group">
       <label for="content">お問い合わせ内容</label>
-      <textarea name="content" id="content" cols="30" rows="10" required></textarea>
+      <textarea name="content" id="content" cols="30" rows="3" required></textarea>
     </div>
 
     <!-- 個人情報保護方針に同意 -->
     <div class="checkbox text-center mb-4">
       <input type="checkbox" id="agree" name="agree" required class="mr-2">
-      <label for="agree"><NuxtLink to="privacy">個人情報保護方針</NuxtLink>に同意する</label>
+      <label for="agree"><NuxtLink to="privacy" class="text-sm">個人情報保護方針</NuxtLink>に同意する</label>
     </div>
 
     <button type="submit" class="c-button">送 信</button>
@@ -109,7 +109,34 @@ form {
     background-image: url('./icon/icon_arrow.svg');
     background-size: contain;
     background-position: center;
+  }
+}
 
+@media screen and (min-width: 1280px){
+  form {
+    position: fixed;
+    top: 100px;
+    right: 0;
+    background: #FFF;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding: 2rem;
+    width: 300px;
+    box-shadow: -2px 3px 10px rgba(0, 0, 0, .8);
+  }
+  h3 {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 20px;
+  line-height: 1.25;
+  }
+  .form-group {
+    margin-bottom: .5rem;
+    gap: .25rem;
+  }
+  input, textarea {
+    padding: .25rem;
+    font-size: .75rem;
   }
 }
 </style>

@@ -53,13 +53,17 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 1280px;
+    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 850px) {
       flex-direction: row;
       margin-bottom: 8rem;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-left: 20px;
+      padding-right: 320px;
     }
   }
   &__left, &__right {

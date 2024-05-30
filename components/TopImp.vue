@@ -35,14 +35,14 @@
 }
 
 .inner {
-  max-width: 1280px;
+  max-width: 1600px;
   @media screen and (min-width: 850px) {
     padding: 90px 2rem 0;
     margin-left: auto;
     margin-right: auto;
   }
   @media screen and (min-width: 1280px) {
-    padding-right: 300px;
+    padding-right: 320px;
   }
 }
 .hero, .hero-list {
